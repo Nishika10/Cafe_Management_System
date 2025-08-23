@@ -1,0 +1,471 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(64, 63, 63);
+    color: white;
+}
+.logo {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding: 10px; /* Add some padding around the logo */
+    
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+.logo h1 {
+    font-family: 'Abril Fatface', cursive; /* Change font family for a unique look */
+    font-size: 36px; /* Adjust font size */
+    color: rgb(255, 83, 20); /* Text color */
+    margin: 0; /* Remove default margin */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+
+.logo:hover h1 {
+    color: white; /* Change text color on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    z-index: 10;
+}
+ul{
+    display: flex;
+
+}
+ul li {
+    list-style: none;
+    position: relative; /* Required for the absolute positioning of the pseudo-element */
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-inline: 22px;
+}
+
+li a:hover {
+    color: rgb(255, 83, 20);
+}
+
+li a::after {
+    content: "";
+    background-color: rgb(255, 83, 20);
+    width: 0;
+    position: absolute;
+    height: 0.2rem;
+    left: 0;
+    margin-top: 0.5rem;
+    top: 100%;
+    transition: width 0.5s; /* Smooth transition for width */
+}
+
+li a:hover::after {
+    width: 100%; /* Expands the underline on hover */
+}
+
+/* .logo{
+    color: white;
+    font-size: 21px;
+} */
+ .buttons-butt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.register{
+    background-color: rgb(255, 83, 20); /* Matching theme color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease;
+    margin-right: -50px;
+    
+}
+.register:hover {
+    background-color: rgb(220, 60, 10); /* Darker shade on hover */
+}
+.book-button {
+    background-color: rgb(255, 83, 20); /* Matching theme color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    /* margin-left: 10px; */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    margin-left:-50px ;
+}
+
+.book-button:hover {
+    background-color: rgb(220, 60, 10); /* Darker shade on hover */
+}
+
+.main{
+    display: flex;
+    gap: 33px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 141px;
+    margin-left: 8%;
+}
+.main img{
+    width: 600px;
+    margin: 5%;
+    margin-left: 15%;
+    float: right;
+}
+.mainText{
+    margin-top: 44px;
+}
+.main h1{
+    font-size: 44px;
+}
+.main p{
+    margin-top: 22px;
+    color: rgb(225, 224, 224);
+}
+.main button {
+    padding: 12px 20px; /* Top-bottom and left-right padding */
+    font-size: 18px; /* Font size */
+    background-color: orangered; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    margin-top: 20px; /* Margin at the top for spacing */
+    text-decoration: none;
+    
+}
+
+.main button:hover {
+    background-color: darkorange; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.main button:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+#drink {
+    margin: 40px 0; /* Add some top and bottom margin for spacing */
+}
+
+.head {
+    margin-top: 8%; /* Margin at the top */
+    margin-bottom: 5%; /* Margin at the bottom */
+    text-align: center; /* Center align the heading */
+    padding: 20px 0; /* Padding for top and bottom */
+    /* background-color: rgba(255, 83, 20, 0.1); Light orange background */
+    border-radius: 8px; /* Rounded corners */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); Subtle shadow effect */
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+
+
+.head h1 {
+    font-size: 2.5rem; /* Increased font size for heading */
+    color: orangered; /* Heading color */
+    position: relative; /* Position for pseudo-element */
+    z-index: 8;
+}
+
+.head h1::after {
+    content: ""; /* Empty content for pseudo-element */
+    display: block; /* Block element */
+    width: 15%; /* Width of the underline */
+    height: 5px; /* Height of the underline */
+    background-color: orangered; /* Color of the underline */
+    margin: 10px auto 0; /* Center the underline */
+    transition: width 0.5s ease; /* Smooth width transition */
+}
+
+/* Add hover effect on heading */
+.head:hover h1::after {
+    width: 100%; /* Expand the underline on hover */
+}
+
+/* Optional: Add a pulse effect when the heading is first loaded */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.head {
+    animation: pulse 2s infinite; /* Pulse effect */
+}
+
+
+.foods {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center the items */
+}
+
+.foodCard {
+    width: 300px; /* Fixed width for each drink card */
+    padding: 11px; /* Inner padding */
+    background-color: #fff; /* White background for cards */
+    margin-inline: 22px; /* Margin on left and right */
+    margin-top: 26px; /* Margin on top */
+    color: black; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.foodCard:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.foodCard img {
+    width: 100%; /* Image takes the full width */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners for images */
+}
+
+.foodCard p {
+    padding: 7px; /* Padding around the text */
+    font-weight: bold; /* Make drink names bold */
+    text-align: center; /* Center align text */
+}
+
+.foodCard button {
+    width: 130px; /* Fixed width for buttons */
+    background-color: orangered; /* Button color */
+    color: white; /* Text color of button */
+    padding: 3px; /* Inner padding */
+    border: none; /* No border */
+    font-size: 18px; /* Font size */
+    margin-top: 10px; /* Margin on top of button */
+    margin-left: 28%;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.foodCard button:hover {
+    background-color: darkorange; /* Darker shade on hover */
+}
+
+
+.reviews{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.reviewCard{
+    width: 300px;
+    padding: 22px;
+    background-color: #fff;
+    text-align: center;
+    margin-inline: 22px;
+    color: black;
+    border-radius: 11px;
+    margin-top: 22px;
+    font-size: medium;
+}
+.reviewCard img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
+.trends{
+    width: 900px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.trendFood{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    overflow: hidden;
+   transition: all 0.5s ease 0s;
+}
+.trendFood img{
+    width: 240px;
+    height: 240px;
+    margin-inline: 12px;
+}
+
+.blogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.blogCard{
+    width: 300px;
+    height: 270px;
+    background-color: #fff;
+    color: black;
+    margin-inline: 22px;
+    padding: 11px;
+    margin-top: 22px;
+}
+.blogCard img{
+    width: 100%;
+}
+.blogCard a{
+    /* padding: 4px 12px; */
+    background-color: rgb(255, 94, 0);
+    color: rgb(247, 237, 237);
+    text-decoration: none;
+    position: relative;
+    top: 16px;
+}
+.blogCard a {
+    text-decoration: none; /* Remove underline */
+    color: rgb(33, 10, 2); /* Link color */
+    font-size: 12px; /* Font size */
+    padding: 8px 16px; /* Padding around the link */
+    border: 2px solid orangered; /* Border around the link */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Transition effects */
+}
+
+.blogCard a:hover {
+    background-color: orangered; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 66px;
+    margin-top: 66px;
+
+}
+.text{
+    margin-top: 22px;
+}
+.text p{
+    margin-top: 11px;
+}
+ .footer #arrow{
+    background-color: #fff;
+    color: black;
+    font-size: 25px;
+    padding: 6px;
+    border-radius: 50%;
+    margin-top: 22px;
+ }
+.cardDetail{
+    width: 500px;
+    padding: 32px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 11px;
+    position: fixed;
+    top: 4%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 40%);
+    color: black;
+}
+.cardDetail img{
+    width: 300px;
+}
+.cardDetail img.liqueur-coffee {
+    width: 400px; /* Specific size for Liqueur Coffee */
+}
+.cardDetail i{
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    font-size: 25px;
+    padding: 11px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1100px){
+    .main{
+        display: block;
+        text-align: center;
+    }
+    .main img{
+        margin-top: 22px;
+    }
+}
+
+
+@media screen and (max-width:920px){
+    .trends{
+        width: 90%;
+    }
+    .trendFood img{
+        width: 200px;
+        margin-inline: 6px;
+    }
+}
+
+@media screen and (max-width:670px){
+    .trends{
+        width: 90%;
+    }
+    .trendFood img{
+        width: 80px;
+        height: 130px;
+        margin-inline: 3px;
+    }
+}
+
+#bar{
+    display: none;
+    font-size: 26px;
+}
+@media screen and (max-width:750px){
+   ul li{
+    display: none;
+   }
+   #bar{
+    display: block;
+   }
+   .main img{
+    width: 90%;
+    border-radius: 11px;
+   }
+   .main h1{
+    font-size: 31px;
+   }
+   .cardDetail{
+    width: 70%;
+   }
+   .cardDetail img{
+    width: 200px;
+   }
+}
