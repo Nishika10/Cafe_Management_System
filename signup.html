@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+           <header class="signup">
+            <h1>Sign Up</h1>
+           
+           </header>
+           <main class="signupin">
+            <form id="registrationForm" 
+            action="#">
+                <p>
+                    <label for="username">User Name</label>
+                <input type="text" id="username"required>
+                <p>
+                    <label for="email">E-Mail</label>
+                <input type="email" id="email"  required>
+                </p>
+                <p><label for="password">Password</label>
+                    <input type="password" id="password"  required></p>
+                
+                <p><input type="submit" id="submit" value="Create Account">
+                </p>
+
+
+
+                </p>
+
+            </form>
+
+           </main>
+         
+        </div>
+        <!-- <div class="circle c1"></div>
+        <div class="circle c2"></div> -->
+    </div>
+
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+        
+            // Get form values
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+        
+            // Create user object
+            const user = {
+                username: username,
+                email: email,
+                password: password
+            };
+        
+            // Store user information in localStorage
+            localStorage.setItem('user', JSON.stringify(user));
+        
+            // Alert user about successful registration
+            alert('Registration successful!');
+        
+            // Clear form fields
+            document.getElementById('username').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('password').value = '';
+
+            window.location.href = 'index.html';
+        });
+        </script>
+        
+</body>
+</html>
