@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.outer{
+    height: 100vh;
+    width: 100vw;
+    background:white;
+    background-image: url("images/food.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body{
+    font-family: 'Lato', sans-serif;;
+}
+.inner{
+    
+    width: 400px;
+   
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
+    padding: 20px 40px;
+    /* background-color: #ffffff09; */
+    background: linear-gradient(to top left, #ffffffff,#ffffff33);
+    backdrop-filter: blur(0);
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px white;
+    z-index: 2;
+    /* border: 2px solid #ccc; */
+
+   
+}
+.signup h1{
+    color: orangered;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.signup p{
+    font-size: 0.9rem;
+    color: black;
+}
+.signupin{
+    margin: 20px 0;
+
+}
+.signupin p{
+    margin: 10px 0;
+}
+.signupin p label{
+    display: block;
+    font-weight: bold;
+}
+.signupin p input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 4px;
+}
+.signupin p input[type="submit"]{
+    color: white;
+    background-color: orangered;
+    border: none;
+    cursor: pointer;
+}
+.signupin p input[type="submit"]:hover{
+    background-color: orangered;
+} 
+.signupfooter p{
+    color: black;
+    text-align: center;
+}
+.signupfooter p a{
+    color:orangered;
+}
