@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+
+#menu {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.menu-section {
+    margin: 40px 0;
+}
+
+.menu-section h2 {
+    font-size: 26px;
+    color: #444;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    padding: 15px;
+}
+
+.menu-list img {
+    max-width: 100px;
+    border-radius: 8px;
+}
+
+.details {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.details h3 {
+    color: #333;
+    margin: 0;
+}
+
+.details p {
+    color: #777;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+/* Styling for Our Foods and Our Drinks headings */
+.menu-section h2 {
+    font-size: 36px;
+    color: #ff6f61; /* Cafe-theme color */
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.menu-section h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #ff6f61; /* Same color for consistency */
+    display: block;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+/* Styling for Our Foods & Drinks heading */
+#menu h1 {
+    font-size: 48px;
+    color: #333; /* Dark color for a sophisticated look */
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif; /* A modern, clean font */
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Decorative line under the heading */
+#menu h1::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    background-color: #ff6f61; /* Accent color to match the cafe theme */
+    display: block;
+    margin: 10px auto 0 auto;
+    border-radius: 3px;
+}
+
+/* Subtle text shadow for depth */
+#menu h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for depth */
+}
+.back-to-home {
+    text-align: center; /* Center the button */
+    margin-top: 40px; /* Add some space before the button */
+}
+
+.home-button {
+    padding: 12px 24px; /* Top-bottom and left-right padding */
+    font-size: 18px; /* Font size */
+    background-color: #ff6347; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    text-transform: uppercase; /* Make the text uppercase */
+}
+
+.home-button:hover {
+    background-color: #ff4500; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+a {
+    text-decoration: none; /* Remove link underline */
+}
+
