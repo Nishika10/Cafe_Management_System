@@ -1,6 +1,6 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCrv6by5gvNzIZbBT-sI0MqU1GQcxzTSvc",
+    apiKey: "your api key",
     authDomain: "cafe-system-7ce7e.firebaseapp.com",
     databaseURL: "https://cafe-system-7ce7e-default-rtdb.firebaseio.com",
     projectId: "cafe-system-7ce7e",
@@ -54,3 +54,4 @@ const db = firebase.database();
     });
 });
 // window.location.href = 'index.html'; // Redirect to home page after booking
+
