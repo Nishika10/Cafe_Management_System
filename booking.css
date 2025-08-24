@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/cafe.jpg'); /* Add your image path here */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 40px;
+    /* padding-left: 10px; */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: orangered;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+   
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 12px; /* Increased padding for better touch target */
+    background-color: orangered; /* Primary background color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Softer corners for a modern look */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.1rem; /* Slightly larger font size for better readability */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover effects */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+button:hover {
+    background-color: darkorange; /* Change background color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Reset lift effect when button is pressed */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Return to original shadow */
+}
