@@ -33,7 +33,7 @@ A simple and interactive web-based system for managing cafe operations. It inclu
 *Displays Our Foods and Our Drinks.*
 
 ### 📅 Table Booking
-![Table Booking](./Screenshots/TableBoooking.png)
+![Table Booking](./Screenshots/TableBooking.png)
 *Booking form for reserving tables.*
 
 ### 🔑 Signup Page
